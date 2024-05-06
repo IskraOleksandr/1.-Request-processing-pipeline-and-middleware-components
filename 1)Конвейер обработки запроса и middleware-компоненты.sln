@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34330.188
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Web Интерпретатор чисел", "Web Интерпретатор чисел\Web Интерпретатор чисел.csproj", "{D6B50752-7A4D-4758-80F0-F73D1111B980}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D6B50752-7A4D-4758-80F0-F73D1111B980}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6B50752-7A4D-4758-80F0-F73D1111B980}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6B50752-7A4D-4758-80F0-F73D1111B980}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6B50752-7A4D-4758-80F0-F73D1111B980}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7022979F-8883-429F-8636-36887D1E2AE4}
+	EndGlobalSection
+EndGlobal
