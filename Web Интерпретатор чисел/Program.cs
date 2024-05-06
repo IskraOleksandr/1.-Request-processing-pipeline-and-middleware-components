@@ -1,25 +1,19 @@
+using Number_interpreter;
+
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-builder.Services.AddRazorPages();
-
+// Все сессии работают поверх объекта IDistributedCache, и 
+// ASP.NET Core предоставляет встроенную реализацию IDistributedCache
+builder.Services.AddDistributedMemoryCache();// добавляем IDistributedMemoryCache
+builder.Services.AddSession();  // Добавляем сервисы сессии
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
-if (!app.Environment.IsDevelopment())
-{
-    app.UseExceptionHandler("/Error");
-    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
-    app.UseHsts();
-}
+app.UseSession();   // Добавляем middleware-компонент для работы с сессиями
 
-app.UseHttpsRedirection();
-app.UseStaticFiles();
-
-app.UseRouting();
-
-app.UseAuthorization();
-
-app.MapRazorPages();
+// Добавляем middleware-компоненты в конвейер обработки запроса.
+app.UseThousands();
+app.UseHundreds();
+app.UseTens();
+app.UseOnes();
 
 app.Run();
